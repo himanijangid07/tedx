@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: "Poppins";
+}
+
+header li,
+a,
+button {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 3vh;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 8%;
+}
+
+.logo {
+  cursor: pointer;
+  height: 10vh;
+  width: 25vw;
+  float: left;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #333;
+}
+
+header button {
+  padding: 8px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5vw;
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  background-color: black;
+}
+
+#scroll-container {
+  font-size: 3vh;
+  margin: auto;
+  overflow: hidden;
+  font-weight: 600;
+  font-style: normal;
+  height: 10vh;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  overflow: hidden;
+  -moz-animation: my-animation 12s linear infinite;
+  -webkit-animation: my-animation 12s linear infinite;
+  animation: my-animation 12s linear infinite;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  background-color: transparent;
+}
+
+#scroll-text span {
+  color: red;
+}
+
+#scroll-text p {
+  color: white;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-bottom: 3vw;
+  gap: 2vw;
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  margin: 8vw 12vw;
+}
+
+.right {
+  height: 100%;
+  width: 50%;
+  margin-right: 12vw;
+}
+
+.left p {
+  font-size: 6vh;
+  width: 100%;
+  color: white;
+}
+
+.left span {
+  font-weight: 800;
+  color: red;
+}
+
+.right img {
+  height: 100vh;
+  width: 30vw;
+  margin-top: 5vw;
+  margin-right: 1vw;
+}
+
+#slideshow {
+  padding-bottom: 10px;
+  border-bottom: 3px solid black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 75vw;
+  position: relative;
+  margin: auto;
+  padding-top: 10px;
+}
+
+/* Hide the images by default
+    .mySlides {
+      display: none;
+    } */
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade img {
+  height: 80vh;
+}
+
+.w3-content {
+  text-align: center;
+  margin: 2vw;
+  height: 60vh;
+}
+
+.myslides1 {
+  display: none;
+  width: 100%;
+}
+
+.w3-container h1 {
+  color: red;
+  text-align: center;
+  margin: 2vw;
+}
+
+.w3-container p {
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin-left: 25vw;
+}
+
+.speakers {
+  margin: 2vw;
+}
+
+.speakers h2 {
+  color: red;
+  text-align: center;
+  font-size: 5vh;
+  margin: 2vw;
+}
+
+.speakers p {
+  color: white;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.profile img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+.profile ul {
+  display: flex;
+  gap: 15vw;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.profile ul li {
+  text-align: center;
+}
+
+.profile ul li div {
+  color: white;
+  font-size: 3vh;
+}
+
+.profile ul li div:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.profile ul li p {
+  font-size: 2.8vh;
+  font-weight: 400;
+  color: white;
+  width: 20vw;
+  margin: 20px 0px 0px 0px;
+}
+
+.profile ul li p:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  text-align: center;
+}
+
+.profile ul li img {
+  margin-bottom: 20px;
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 15vw;
+  height: 15vw;
+  cursor: pointer;
+}
+
+.profile ul li img:hover {
+  transform: scale(1.1);
+}
+
+.profile ul li a {
+  text-decoration: none;
+}
+
+.contact {
+  margin: 2vw;
+  text-align: center;
+}
+
+.contact h2 {
+  color: red;
+  text-align: center;
+  font-size: 5vh;
+  margin: 4vw;
+}
+
+.contact p {
+  color: white;
+  margin-bottom: 2vw;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5vh;
+}
+
+.contact a i {
+  color: red;
+}
+
+.form {
+  margin-left: 2vw;
+  text-align: center;
+}
+
+.form label {
+  color: white;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+}
+
+.form input {
+  width: 20%;
+  margin-bottom: 1vw;
+  border-radius: 0.5vw;
+  height: 4vh;
+  margin-top: 0.8vw;
+}
+
+.form button {
+  width: 7vw;
+  height: 5vh;
+  color: white;
+  background-color: red;
+  border-radius: 0.5vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+}
+
+.form button:hover {
+  cursor: pointer;
+}
+
+.form textarea {
+  width: 20%;
+  border-radius: 0.5vw;
+  margin-top: 1vw;
+}
+
+.form i {
+  color: white;
+}
+
+.footer {
+  display: flex;
+  color: white;
+  margin-left: 5vw;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  margin-bottom: 1vw;
+  font-size: 2vh;
+}
+
+.heading h1 {
+    color: white;
+    text-align: center;
+    font-size: 8vh;
+}
+
+.heading p {
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.heading {
+    height: 30vh;
+    margin-top: 10vw;
+}
+
+.form1 {
+    margin: 5vw;
+    background-color: #333;
+    margin-bottom: 2vw;
+    height: 100%;
+}
+
+.form1 h2 {
+    color: white;
+    margin-left: 2vw;
+    font-size: 5vh;
+    padding: 2vw;
+    margin-bottom: 1vw;
+}
+
+.form1 p {
+    color: red;
+    margin-left: 4vw;
+    font-size: 3vh;
+    margin-bottom: 2vw;
+}
+
+.form1 a {
+    margin-left: 2vw;
+}
+
+.form1 button {
+    cursor: pointer;
+    width: 18vw;
+    height: 9vh;
+    font-size: 3vh;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: 1px solid red;
+}
+
+.form1 #para {
+    font-weight: 900;
+    text-decoration: underline;
+    color: red;
+    margin-left: 4vw;
+    font-size: 3vh;
+    margin-bottom: 2vw;
+}
+
+.form1 label {
+    color: white;
+    margin: 2vw;
+    font-size: 2.5vh;
+    padding: 2vw;
+    margin-top: 1vw;
+}
+
+.form1 input {
+    margin-left: 4vw;
+    margin-top: 1vw;
+    width: 50%;
+    height: 5vh;
+    margin-bottom: 1vw;
+    border-radius: 0.5vw;
+}
+
+.file1 input {
+    width: 15%;
+}
+
+.form1 #submit {
+    width: 10%;
+    font-size: 3vh;
+    background-color: red;
+    padding: 5px;
+    margin-bottom: 2vw;
+    height: 6vh;
+}
+
+.footer {
+    display: flex;
+    color: white;
+    margin-left: 5vw;
+    gap: 30vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h4 {
+    font-size: 3.5vh;
+    font-weight: 200;
+    margin-bottom: 0.8vw;
+}
+
+.footer p {
+    font-size: 3vh;
+}
+
+.footer ul li a {
+    font-size: 3vh;
+    text-decoration: none;
+    color: white;
+}
+
+.speakers1 {
+    background-color: #333;
+}
+
+.speakers1 .about p {
+    color: white;
+}
+
+.first {
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    padding: 5vw;
+}
+
+.first img {
+    width: 18vw;
+    height: 40vh;
+    border-radius: 50%;
+}
+
+.horizontal1 {
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid black;
+    line-height: 80%;
+}
+
+.heading1 {
+    background-color: #333;
+    text-align: center;
+}
+
+.team h1 {
+    color: white;
+    font-size: 5vh;
+    margin-left: 5vw;
+    text-align: center;
+}
+
+.sgvs h1 {
+    color: white;
+    font-size: 5vh;
+    margin-left: 5vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.sgvs p {
+    color: white;
+    font-size: 3vh;
+    margin: 2vw;
+    padding: 2vw;
+}
