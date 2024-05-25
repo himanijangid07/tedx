@@ -258,23 +258,18 @@ header button:hover {
 .w3-content {
   text-align: center;
   margin: 2vw;
-  height: 60vh;
+  height: inherit;
 }
 
-.myslides1 {
-  display: none;
-  width: 100%;
-}
-
-.w3-container h1 {
+.w3-content h1 {
   color: red;
   text-align: center;
   margin: 2vw;
 }
 
-.w3-container p {
+.w3-content p {
   color: white;
-  text-align: center;
+  text-align: justify;
   width: 50%;
   margin-left: 25vw;
 }
@@ -401,13 +396,14 @@ header button:hover {
 }
 
 .form button {
-  width: 7vw;
-  height: 5vh;
+  width: 10vw;
+  height: 6vh;
   color: white;
   background-color: red;
   border-radius: 0.5vw;
   margin-top: 1vw;
   margin-bottom: 2vw;
+  border: none;
 }
 
 .form button:hover {
@@ -438,180 +434,412 @@ footer {
 }
 
 .heading h1 {
-    color: white;
-    text-align: center;
-    font-size: 8vh;
+  color: white;
+  text-align: center;
+  font-size: 8vh;
 }
 
 .heading p {
-    color: white;
-    text-align: center;
-    font-size: 3vh;
+  color: white;
+  text-align: center;
+  font-size: 3vh;
 }
 
 .heading {
-    height: 30vh;
-    margin-top: 10vw;
+  height: 30vh;
+  margin-top: 10vw;
 }
 
 .form1 {
-    margin: 5vw;
-    background-color: #333;
-    margin-bottom: 2vw;
-    height: 100%;
+  margin: 5vw;
+  background-color: #333;
+  margin-bottom: 2vw;
+  height: 100%;
 }
 
 .form1 h2 {
-    color: white;
-    margin-left: 2vw;
-    font-size: 5vh;
-    padding: 2vw;
-    margin-bottom: 1vw;
+  color: white;
+  margin-left: 2vw;
+  font-size: 5vh;
+  padding: 2vw;
+  margin-bottom: 1vw;
 }
 
 .form1 p {
-    color: red;
-    margin-left: 4vw;
-    font-size: 3vh;
-    margin-bottom: 2vw;
+  color: red;
+  margin-left: 4vw;
+  font-size: 3vh;
+  margin-bottom: 2vw;
 }
 
 .form1 a {
-    margin-left: 2vw;
+  margin-left: 2vw;
 }
 
 .form1 button {
-    cursor: pointer;
-    width: 18vw;
-    height: 9vh;
-    font-size: 3vh;
-    font-weight: bold;
-    color: white;
-    background-color: red;
-    padding: 1vw;
-    border-radius: 1vw;
-    border: 1px solid red;
+  cursor: pointer;
+  width: 18vw;
+  height: 9vh;
+  font-size: 3vh;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  padding: 1vw;
+  border-radius: 1vw;
+  border: 1px solid red;
 }
 
 .form1 #para {
-    font-weight: 900;
-    text-decoration: underline;
-    color: red;
-    margin-left: 4vw;
-    font-size: 3vh;
-    margin-bottom: 2vw;
+  font-weight: 900;
+  text-decoration: underline;
+  color: red;
+  margin-left: 4vw;
+  font-size: 3vh;
+  margin-bottom: 2vw;
 }
 
 .form1 label {
-    color: white;
-    margin: 2vw;
-    font-size: 2.5vh;
-    padding: 2vw;
-    margin-top: 1vw;
+  color: white;
+  margin: 2vw;
+  font-size: 2.5vh;
+  padding: 2vw;
+  margin-top: 1vw;
 }
 
 .form1 input {
-    margin-left: 4vw;
-    margin-top: 1vw;
-    width: 50%;
-    height: 5vh;
-    margin-bottom: 1vw;
-    border-radius: 0.5vw;
+  margin-left: 4vw;
+  margin-top: 1vw;
+  width: 50%;
+  height: 5vh;
+  margin-bottom: 1vw;
+  border-radius: 0.5vw;
 }
 
 .file1 input {
-    width: 15%;
+  width: 15%;
 }
 
 .form1 #submit {
-    width: 10%;
-    font-size: 3vh;
-    background-color: red;
-    padding: 5px;
-    margin-bottom: 2vw;
-    height: 6vh;
+  width: 10%;
+  font-size: 3vh;
+  background-color: red;
+  padding: 5px;
+  margin-bottom: 2vw;
+  height: 6vh;
 }
 
 .footer {
-    display: flex;
-    color: white;
-    margin-left: 5vw;
-    gap: 30vw;
-    margin-top: 3vw;
-    margin-bottom: 2vw;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  color: white;
+  margin-left: 5vw;
+  gap: 30vw;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer h4 {
-    font-size: 3.5vh;
-    font-weight: 200;
-    margin-bottom: 0.8vw;
+  font-size: 3.5vh;
+  font-weight: 200;
+  margin-bottom: 0.8vw;
 }
 
 .footer p {
-    font-size: 3vh;
+  font-size: 3vh;
 }
 
 .footer ul li a {
-    font-size: 3vh;
-    text-decoration: none;
-    color: white;
+  font-size: 3vh;
+  text-decoration: none;
+  color: white;
+}
+/* About Start */
+.column {
+  flex: 33.33%;
+  padding: 25px;
+
+  width: 300px;
+  margin: 5vh;
+  background-color: #333;
+  text-align: center;
+  color: white;
 }
 
+.column h2 {
+  color: red;
+  font-size: 5vh;
+}
+
+.column p{
+  text-align: justify;
+}
+
+#more, #more1, #more2 {
+  display: none;
+}
+
+.column button {
+  background-color: red;
+  color: white;
+  margin: 2vw;
+  width: 9vw;
+  padding: 5px;
+  border: none;
+  border-radius: 2vh;
+  cursor: pointer;
+} 
+
+.container-about {
+  display: flex;
+  margin: 20px auto;
+}
+/* About End */
+
 .speakers1 {
-    background-color: #333;
+  background-color: #333;
 }
 
 .speakers1 .about p {
-    color: white;
+  color: white;
 }
 
 .first {
-    display: flex;
-    gap: 5vw;
-    justify-content: center;
-    align-items: center;
-    height: 55vh;
-    padding: 5vw;
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  padding: 5vw;
 }
 
 .first img {
-    width: 18vw;
-    height: 40vh;
-    border-radius: 50%;
+  width: 18vw;
+  height: 40vh;
+  border-radius: 50%;
 }
 
 .horizontal1 {
-    width: 100%;
-    height: 2px;
-    border-top: 2px solid black;
-    line-height: 80%;
+  width: 100%;
+  height: 2px;
+  border-top: 2px solid black;
+  line-height: 80%;
 }
 
 .heading1 {
-    background-color: #333;
-    text-align: center;
+  background-color: #333;
+  text-align: center;
 }
 
 .team h1 {
-    color: white;
-    font-size: 5vh;
-    margin-left: 5vw;
-    text-align: center;
+  color: red;
+  font-size: 5vh;
+  margin-left: 5vw;
+  text-align: center;
 }
 
 .sgvs h1 {
-    color: white;
-    font-size: 5vh;
-    margin-left: 5vw;
-    text-align: center;
-    margin-top: 5vw;
+  color: red;
+  font-size: 5vh;
+  margin-left: 5vw;
+  text-align: center;
+  margin-top: 5vw;
 }
 
 .sgvs p {
-    color: white;
-    font-size: 3vh;
-    margin: 2vw;
-    padding: 2vw;
+  color: white;
+  font-size: 3vh;
+  margin: 2vw;
+  padding: 2vw;
+}
+
+.para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.para .image {
+  width: 40vw;
+  height: 50vh;
+}
+
+.para1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+@media only screen and (max-width: 360px) {
+  header {
+    padding: 10px 2%;
+  }
+
+  .logo {
+    height: 6vh;
+    width: 50vw;
+    margin-bottom: 5px;
+  }
+
+  .nav_links li {
+    font-size: 2.5vh;
+  }
+
+  header button {
+    font-size: 2vh;
+    padding: 5px;
+  }
+
+  #scroll-text {
+    font-size: 2vh;
+  }
+
+  .content {
+    margin-bottom: 2vw;
+  }
+
+  .left p {
+    font-size: 3.5vh;
+  }
+
+  .right img {
+    height: 40vh;
+    width: 70vw;
+    margin-left: 5vw;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+  }
+
+  .fade img {
+    height: 30vh;
+  }
+
+  .profile img {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .profile ul {
+    gap: 15vw;
+    margin: 5vw;
+  }
+
+  .form button {
+    width: 50%;
+  }
+
+  .column {
+    width: 90%;
+    margin: 5vh auto;
+  }
+
+  .column button {
+    width: 30vw;
+    margin: 5vw;
+  }
+
+  .form button {
+    height: 7vh;
+    width: 10vw;
+    margin-bottom: 5vw;
+    border-radius: 2vw;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  header {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+
+  .logo {
+    height: 8vh;
+    width: 40vw;
+    margin-bottom: 10px;
+  }
+
+  .nav_links li {
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  header button {
+    padding: 5px;
+    font-size: 2.5vh;
+  }
+
+  #scroll-text {
+    font-size: 2.5vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    width: 90%;
+    margin: 5vw 0;
+  }
+
+  .left p {
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .right img {
+    height: 50vh;
+    width: 80vw;
+  }
+
+  .slideshow-container {
+    max-width: 90vw;
+  }
+
+  .fade img {
+    height: 40vh;
+  }
+
+  .w3-content p {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .profile img {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .profile ul {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .profile ul li {
+    width: 100%;
+  }
+
+  .form input, .form textarea {
+    width: 80%;
+  }
+
+  .form button {
+    width: 40%;
+  }
+
+  .column {
+    width: 80%;
+    margin: 5vh auto;
+  }
+
+  .container-about {
+    flex-direction: column;
+    align-items: center;
+  }
 }
